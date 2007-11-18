@@ -6,8 +6,8 @@ License:	LGPLv2+
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-genmon-plugin
 Source0:	http://goodies.xfce.org/releases/xfce4-genmon-plugin/%{name}-%{version}.tar.bz2
 Group:		Graphical desktop/Xfce
-Requires:	xfce-panel >= 4.3.0
-BuildRequires:	xfce-panel-devel >= 4.3.0
+Requires:	xfce4-panel >= 4.4.2
+BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libgdk_pixbuf2.0-devel
 BuildRequires:	perl(XML::Parser)
 Obsoletes:	xfce-genmon-plugin
