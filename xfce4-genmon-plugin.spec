@@ -11,7 +11,6 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libgdk_pixbuf2.0-devel
 BuildRequires:	perl(XML::Parser)
 Obsoletes:	xfce-genmon-plugin
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot 
 
 %description
 This plugin cyclically spawns the indicated script/program, captures its 
