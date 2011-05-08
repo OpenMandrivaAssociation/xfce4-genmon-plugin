@@ -1,28 +1,27 @@
-Summary:	Generic Monitor XFce panel plugin (GenMon)	
+%define url_ver %(echo %{version} | cut -c 1-3)
+
+Summary:	Generic Monitor XFce panel plugin (GenMon)
 Name:		xfce4-genmon-plugin
-Version:	3.2
-Release:	%mkrel 9
+Version:	3.3.0
+Release:	%mkrel 1
 License:	LGPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-genmon-plugin
-Source0:	http://goodies.xfce.org/releases/xfce4-genmon-plugin/%{name}-%{version}.tar.bz2
-Patch0:		%{name}-3.2-dont-spawn-zobies.patch
-Patch1:		%{name}-3.2-kill-unused-pipes.patch
+Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-genmon-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	libgdk_pixbuf2.0-devel
 BuildRequires:	perl(XML::Parser)
+BuildRequires:	libxfcegui4-devel
 Obsoletes:	xfce-genmon-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot 
 
 %description
 This plugin cyclically spawns the indicated script/program, captures its 
 output (stdout) and displays the resulting string into the panel.
- 
+
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
 
 %build
 %configure2_5x
@@ -30,10 +29,7 @@ output (stdout) and displays the resulting string into the panel.
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std 
-
-# remove unneeded devel files
-#rm -f %{buildroot}/%{_libdir}/xfce4/panel-plugins/libgenmon.a
+%makeinstall_std
 
 %find_lang %{name}
 
