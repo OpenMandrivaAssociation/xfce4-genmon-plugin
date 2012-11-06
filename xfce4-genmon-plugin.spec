@@ -20,7 +20,7 @@ This plugin cyclically spawns the indicated script/program, captures its
 output (stdout) and displays the resulting string into the panel.
 
 %prep
-%setup -q
+%setup -qn %{name}-3.4
 
 %build
 %configure2_5x
@@ -32,6 +32,6 @@ output (stdout) and displays the resulting string into the panel.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog README 
-%{_libdir}/xfce4/panel-plugins/
-%{_datadir}/xfce4/panel-plugins/*
+%doc AUTHORS ChangeLog README
+%{_libdir}/xfce4/panel/plugins/libgenmon.so
+%{_datadir}/xfce4/panel/plugins/*.desktop
