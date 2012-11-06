@@ -12,7 +12,7 @@ Requires:	xfce4-panel >= 4.9.0
 BuildRequires:	xfce4-panel-devel >= 4.9.0
 BuildRequires:	libgdk_pixbuf2.0-devel
 BuildRequires:	perl(XML::Parser)
-BuildRequires:	libxfcegui4-devel
+BuildRequires:	libxfce4ui-devel
 Obsoletes:	xfce-genmon-plugin
 
 %description
