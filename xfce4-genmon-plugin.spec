@@ -1,4 +1,5 @@
 %define url_ver %(echo %{version} | cut -c 1-3)
+%define _disable_rebuild_configure 1
 
 Summary:	Generic Monitor XFce panel plugin (GenMon)
 Name:		xfce4-genmon-plugin
@@ -10,7 +11,7 @@ URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-genmon-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-genmon-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.9.0
 BuildRequires:	pkgconfig(libxfce4panel-1.0)
-BuildRequires:	libgdk_pixbuf2.0-devel
+BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	pkgconfig(libxfce4ui-1)
 
