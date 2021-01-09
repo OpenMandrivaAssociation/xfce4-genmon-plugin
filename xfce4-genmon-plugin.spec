@@ -3,7 +3,7 @@
 
 Summary:	Generic Monitor XFce panel plugin (GenMon)
 Name:		xfce4-genmon-plugin
-Version:	4.0.2
+Version:	4.1.0
 Release:	1
 License:	LGPLv2+
 Group:		Graphical desktop/Xfce
@@ -31,6 +31,6 @@ output (stdout) and displays the resulting string into the panel.
 %find_lang %{name} %{name}.lang
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog README 
+%doc AUTHORS ChangeLog README*
 %{_libdir}/xfce4/panel/plugins/
 %{_datadir}/xfce4/panel/plugins/*
