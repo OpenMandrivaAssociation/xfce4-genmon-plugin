@@ -34,3 +34,5 @@ output (stdout) and displays the resulting string into the panel.
 %doc AUTHORS ChangeLog README*
 %{_libdir}/xfce4/panel/plugins/
 %{_datadir}/xfce4/panel/plugins/*
+%{_iconsdir}/hicolor/*x*/apps/org.xfce.genmon.png
+%{_iconsdir}/hicolor/scalable/apps/org.xfce.genmon.svg
