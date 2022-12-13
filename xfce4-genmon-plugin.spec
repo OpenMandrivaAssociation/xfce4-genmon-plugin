@@ -4,7 +4,7 @@
 Summary:	Generic Monitor XFce panel plugin (GenMon)
 Name:		xfce4-genmon-plugin
 Version:	4.1.1
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-genmon-plugin
