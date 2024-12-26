@@ -19,7 +19,7 @@ This plugin cyclically spawns the indicated script/program, captures its
 output (stdout) and displays the resulting string into the panel.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
@@ -34,5 +34,6 @@ output (stdout) and displays the resulting string into the panel.
 %doc AUTHORS ChangeLog README*
 %{_libdir}/xfce4/panel/plugins/
 %{_datadir}/xfce4/panel/plugins/*
+%{_datadir}/xfce4/genmon/scripts/
 %{_iconsdir}/hicolor/*x*/apps/org.xfce.genmon.png
 %{_iconsdir}/hicolor/scalable/apps/org.xfce.genmon.svg
